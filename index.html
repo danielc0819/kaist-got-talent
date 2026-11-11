@@ -165,7 +165,7 @@
   .act{position:relative;background:var(--card);border:1px solid rgba(255,255,255,.85);border-radius:var(--radius);padding:22px;overflow:hidden;box-shadow:var(--shadow)}
   .act::after{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--silver),var(--ice),var(--silver))}
   .act .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-  .act .no{font:700 36px/1 "Cinzel",serif;color:transparent;-webkit-text-stroke:1px rgba(31,42,94,.45)}
+  .act .no{font:700 15px/1.4 "Cinzel",serif;letter-spacing:1px;color:var(--navy-2);padding:4px 12px;border-radius:999px;border:1px solid rgba(31,42,94,.22);background:rgba(255,255,255,.6)}
   .act .cat{font:700 11px "Cinzel",serif;letter-spacing:1px;padding:4px 10px;border-radius:999px;background:rgba(124,192,227,.18);color:var(--teal);border:1px solid rgba(42,157,175,.35);white-space:nowrap}
   .act h3{font-size:20px;margin:16px 0 2px;line-height:1.3}
   .act .kind{font-size:13px;color:var(--muted)}
@@ -349,7 +349,7 @@
 
 <section id="raffle">
   <div class="wrap">
-    <div class="eyebrow">RAFFLE &amp; BEST DRESSER</div>
+    <div class="eyebrow">RAFFLE &amp; BEST DRESSED</div>
     <h2 data-i18n="h_raffle">경품 추첨</h2>
     <div class="hl" id="raffleNote" style="margin:-14px 0 32px"></div>
     <div class="rgroup">
@@ -399,7 +399,7 @@ const EVENTS = [
 ];
 const I18N = {
   ko:{
-    nav_schedule:"일정",rep:"대표",nav_mc:"MC",nav_raffle:"경품",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_raffle:"경품 추첨",r_gen:"🎟️ 일반 래플",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"드레스코드(가면·의상)를 가장 멋지게 소화한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참가 안내",nav_prize:"상금",nav_contact:"문의",
+    nav_schedule:"일정",nav_mc:"MC",nav_raffle:"경품",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_raffle:"경품 추첨",r_gen:"🎟️ 일반 래플",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"드레스코드(가면·의상)를 가장 멋지게 소화한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참가 안내",nav_prize:"상금",nav_contact:"문의",
     tagline:"국제교원 및 학생지원팀이 카이스트의 숨은 재능을 발굴합니다.<br>학생·교원·직원, 내·외국인 모두의 무대.",
     cta_schedule:"일정 보기",cta_poster:"포스터 보기",cta_contact:"문의하기",
     h_schedule:"일정 &amp; 선발",h_info:"참가 안내",h_prize:"본선 진출자 상금",h_contact:"문의",
@@ -409,7 +409,7 @@ const I18N = {
     st_open:"접수 중",st_closed:"접수 마감 · 예선 진행 중",st_final:"본선 진출자 확정 · 본선 D-",st_live:"지금 진행 중",st_end:"행사 종료"
   },
   en:{
-    nav_schedule:"Schedule",rep:"Representative",nav_mc:"MC",nav_raffle:"Raffle",h_mc:"Our MCs",mc_wait:"Selection in progress",h_raffle:"Raffle & Prizes",r_gen:"🎟️ General Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dresser",r_dr_d:"For those who wear the masquerade dress code best",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"How to Join",nav_prize:"Prizes",nav_contact:"Contact",
+    nav_schedule:"Schedule",nav_mc:"MC",nav_raffle:"Raffle",h_mc:"Our MCs",mc_wait:"Selection in progress",h_raffle:"Raffle & Prizes",r_gen:"🎟️ General Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dressed",r_dr_d:"For those who wear the masquerade dress code best",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"How to Join",nav_prize:"Prizes",nav_contact:"Contact",
     tagline:"KAIST ISSS is searching for the hidden talents of our campus.<br>One stage for students, faculty and staff — Korean and international.",
     cta_schedule:"See Schedule",cta_poster:"View Poster",cta_contact:"Contact Us",
     h_schedule:"Schedule &amp; Selection",h_info:"How to Join",h_prize:"Prizes for Finalists",h_contact:"Contact",
@@ -428,7 +428,7 @@ const FINAL_INFO = {
   venue: { ko:"KAIST 대강당 (E15)", en:"KAIST Auditorium (E15)" }
 };
 const FINAL_NOTES = [
-  { ko:{k:"베스트 드레서에 도전하세요!", v:"모든 문화권의 가면·의상 환영"}, en:{k:"Chance to Win Best Dress!", v:"Masks & costumes from all cultures are welcome"} },
+  { ko:{k:"베스트 드레서에 도전하세요!", v:"모든 문화권의 가면·의상 환영"}, en:{k:"Chance to Win Best Dressed!", v:"Masks & costumes from all cultures are welcome"} },
   { ko:{k:"무료 뷔페",  v:"KAIST 구성원과 가족 누구나"},              en:{k:"Free buffet", v:"For the KAIST community and their families"} },
   { ko:{k:"경품 추첨",  v:"현장 래플 이벤트"},                        en:{k:"Raffle", v:"Get a chance to win"} }
 ];
@@ -442,30 +442,29 @@ const PROGRAM = [
   { start:"16:00", end:"17:00", type:"",      ko:{t:"리셉션 및 문화체험", d:""},                            en:{t:"Reception & Cultural Booths", d:""} },
   { start:"17:00", end:"17:05", type:"perf",  ko:{t:"Welcome 공연", d:"KAIST 응원단 ELKA"},                 en:{t:"Welcome Performance", d:"KAIST Cheering Squad ELKA"} },
   { start:"17:05", end:"17:07", type:"",      ko:{t:"개회", d:"사회자 (내·외국인 학생)"},                    en:{t:"Opening", d:"MCs"} },
-  { start:"17:07", end:"17:09", type:"",      ko:{t:"개회사", d:"국제협력처장"},                             en:{t:"Opening Remarks", d:"Dean of International Relations"} },
-  { start:"17:09", end:"17:12", type:"",      ko:{t:"축사", d:"KAIST 총장"},                                 en:{t:"Congratulatory Remarks", d:"KAIST President"} },
+  { start:"17:07", end:"17:09", type:"",      ko:{t:"개회사", d:"국제협력처장"},                             en:{t:"Opening Remarks", d:"Vice President, International Office"} },
+  { start:"17:09", end:"17:12", type:"",      ko:{t:"축사", d:"KAIST 총장 배충식"},                                 en:{t:"Congratulatory Remarks", d:"KAIST President, Choongsik Bae"} },
   { start:"17:12", end:"17:15", type:"",      ko:{t:"기념사진 촬영", d:""},                                  en:{t:"Group Photo", d:""} },
   { start:"17:15", end:"18:05", type:"perf",  ko:{t:"장기자랑 경연 (Talent Show)", d:"본선 진출 5팀"},      en:{t:"Talent Show", d:"5 finalist acts"} },
   { start:"18:05", end:"18:15", type:"perf",  ko:{t:"특별공연", d:"2023 & 2025 우승팀"},                     en:{t:"Special Performance", d:"2023 & 2025 winners"} },
   { start:"18:15", end:"18:25", type:"award", ko:{t:"장기자랑 순위 발표 및 시상", d:"기념촬영 포함"},        en:{t:"Talent Show Results & Awards", d:"Including photo session"} },
-  { start:"18:25", end:"18:38", type:"award", ko:{t:"Best Dresser 시상 및 경품 추첨", d:""},                 en:{t:"Best Dresser Awards & Raffle Draw", d:""} },
+  { start:"18:25", end:"18:38", type:"award", ko:{t:"Best Dressed 시상 및 경품 추첨", d:""},                 en:{t:"Best Dressed Awards & Raffle Draw", d:""} },
   { start:"18:38", end:"18:40", type:"",      ko:{t:"폐회", d:"사회자"},                                     en:{t:"Closing", d:"MCs"} },
   { start:"18:40", end:"20:30", type:"party", ko:{t:"글로벌 교류 만찬 (Harmony Night)", d:"Standing Party"}, en:{t:"Global Networking Dinner (Harmony Night)", d:"Standing party"} },
   { start:"20:30",              type:"",      ko:{t:"행사 종료", d:""},                                      en:{t:"End of Event", d:""} }
 ];
 
 /* ----- 본선 진출자 -----
-   no: 공연 순서 · name: 대표 이름 · team: 팀명(있으면 큰 글씨로 표시, 없으면 "")
-   rep: true면 이름 아래 "대표" 표시(듀엣·밴드처럼 여러 명일 때)
+   no: 공연 순서 · name: 이름 · team: 팀명(있으면 팀명을 크게, 이름은 아래에 표시 / 없으면 "")
    category: 공연 구분 (국문·영문) · piece: 퍼포먼스 및 곡명 (정해지면 입력, 없으면 "")
-   예) { no:6, name:"홍길동", team:"Team Aurora", rep:true, category:{ko:"댄스", en:"Dance"}, piece:"Supernova — aespa" },
+   예) { no:6, name:"홍길동", team:"Team Aurora", category:{ko:"댄스", en:"Dance"}, piece:"Supernova — aespa" },
 */
 const FINALISTS = [
-  { no:1, name:"Tran Thanh Lam",     team:"", rep:false, category:{ko:"노래 (솔로)",      en:"Singing (Solo)"},          piece:"" },
-  { no:2, name:"Syed Anmole Seismi", team:"", rep:true,  category:{ko:"노래 (듀엣)",      en:"Singing (Duet)"},          piece:"" },
-  { no:3, name:"Adelle Ria Persad",  team:"", rep:true,  category:{ko:"노래·기타 (듀엣)", en:"Singing & Guitar (Duet)"}, piece:"" },
-  { no:4, name:"Jovyan",             team:"", rep:true,  category:{ko:"밴드",             en:"Band"},                    piece:"" },
-  { no:5, name:"공다을",             team:"", rep:false, category:{ko:"댄스",             en:"Dance"},                   piece:"" }
+  { no:1, name:"Tran Thanh Lam",     team:"", category:{ko:"노래 (솔로)",      en:"Singing (Solo)"},          piece:"" },
+  { no:2, name:"Syed Anmole Seismi", team:"", category:{ko:"노래 (듀엣)",      en:"Singing (Duet)"},          piece:"" },
+  { no:3, name:"Adelle Ria Persad",  team:"", category:{ko:"노래·기타 (듀엣)", en:"Singing & Guitar (Duet)"}, piece:"" },
+  { no:4, name:"Jovyan",             team:"", category:{ko:"밴드",             en:"Band"},                    piece:"" },
+  { no:5, name:"공다을",             team:"", category:{ko:"댄스",             en:"Dance"},                   piece:"" }
 ];
 
 /* ----- 당일 MC -----
@@ -484,7 +483,7 @@ const MCS = [
         또는 같은 폴더에 올린 사진 파일명(예: "prize1.jpg"). 비워두면 일러스트가 보입니다.
    img: 경품 사진 파일명(같은 폴더에 업로드, 예: "raffle1.jpg") 또는 이미지 주소
 */
-const RAFFLE_NOTE = { ko:"🎁 베스트 드레서 시상과 경품 추첨은 18:25에 진행됩니다. 응모 방법은 추후 안내됩니다.", en:"🎁 Best Dresser awards and the raffle draw begin at 6:25 PM. How to enter will be announced soon." };
+const RAFFLE_NOTE = { ko:"🎁 안내데스크에서 래플 응모권을 꼭 받아 가세요.", en:"🎁 Reminder to pick up your raffle ticket at the front desk." };
 const RAFFLE = {
   general: [
     { rank:1, count:1, img:"ipad", art:"tablet", ko:{name:"애플 아이패드", desc:""},             en:{name:"Apple iPad", desc:""} },
@@ -493,7 +492,7 @@ const RAFFLE = {
   ],
   dresser: [
     { rank:1, count:1, img:"watch", art:"watch", ko:{name:"애플 워치", desc:""},       en:{name:"Apple Watch", desc:""} },
-    { rank:2, count:2, img:"backpack", art:"bag", ko:{name:"샘소나이트 가방", desc:""}, en:{name:"Samsonite Bag", desc:""} },
+    { rank:2, count:2, img:"backpack", art:"bag", ko:{name:"샘소나이트 백팩", desc:""}, en:{name:"Samsonite Backpack", desc:""} },
     { rank:3, count:2, img:"tumbler", art:"tumbler", ko:{name:"스탠리 텀블러", desc:""},   en:{name:"Stanley Tumbler", desc:""} }
   ]
 };
@@ -602,9 +601,9 @@ function renderLineup(){
   const list = FINALISTS.filter(f=>curCat==="all"||catOf(f)===curCat).sort((a,b)=>a.no-b.no);
   box.innerHTML = `<div class="lineup">` + list.map(f=>{
     const cat = catOf(f);
-    const sub = f.team ? `${t("rep")} · ${esc(f.name)}` : (f.rep ? t("rep") : "");
+    const sub = f.team ? esc(f.name) : "";
     return `<div class="act">
-      <div class="top"><div class="no">${String(f.no).padStart(2,"0")}</div>${cat?`<span class="cat">${esc(cat)}</span>`:""}</div>
+      <div class="top"><div class="no">Team #${esc(f.no)}</div>${cat?`<span class="cat">${esc(cat)}</span>`:""}</div>
       <h3>${esc(f.team || f.name)}</h3>
       ${sub?`<div class="kind">${sub}</div>`:""}
       ${f.piece?`<div class="piece"><span>♪</span>${esc(f.piece)}</div>`:""}
