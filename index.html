@@ -265,7 +265,7 @@
   <div class="wrap">
     <h1>KAIST's<br>Got Talent</h1>
     <div class="theme">Winter Masquerade</div>
-    <p class="tag" data-i18n="tagline">캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.</p>
+    <p class="tag" data-i18n="tagline">KAIST의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.</p>
 
     <div class="count" id="count">
       <div class="cell"><b id="d">--</b><span>DAYS</span></div>
@@ -381,12 +381,12 @@ const EVENTS = [
     en:{t:"Round 2 · Live Audition", w:"Nov 6 (Fri)", n:""} },
   { id:"final", ico:"🏆", start:"2026-11-27T17:00:00+09:00", end:"2026-11-27T20:30:00+09:00",
     ko:{t:"최종 본선", w:"11.27 (금) 17:00", n:"KAIST 대강당 (E15) · 문화부스 16:00"},
-    en:{t:"Grand Final", w:"Nov 27 (Fri) 5:00 PM", n:"KAIST Auditorium (E15) · Booths 4:00 PM"} }
+    en:{t:"Grand Final", w:"Nov 27 (Fri) 5:00 PM", n:"KAIST Auditorium (E15) · Culture Booths 4:00 PM"} }
 ];
 const I18N = {
   ko:{
     nav_schedule:"일정",nav_mc:"MC",nav_dr:"베스트 드레서",nav_raffle:"현장 추첨",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_dr:"베스트 드레서",h_raffle:"현장 추첨",r_gen:"🎟️ 현장 추첨",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"제일 멋진 가면과 의상을 착용한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참석 안내",nav_contact:"문의",
-    tagline:"캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.",
+    tagline:"KAIST의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.",
     cta_schedule:"일정 보기",cta_poster:"포스터 보기",cta_contact:"문의하기",
     h_schedule:"일정 &amp; 선발",h_info:"참석 안내",h_contact:"문의",
     who_t:"참석 대상",who_1:"모든 KAIST 내·외국인 구성원 (학생, 교원, 직원)",
@@ -396,7 +396,7 @@ const I18N = {
   },
   en:{
     nav_schedule:"Schedule",nav_mc:"MC",nav_dr:"Best Dressed",nav_raffle:"Raffle",h_mc:"Our MCs",mc_wait:"Selection in progress",h_dr:"Best Dressed",h_raffle:"On-site Raffle",r_gen:"🎟️ On-site Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dressed",r_dr_d:"For those wearing the best mask and outfit",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"Attendance",nav_contact:"Contact",
-    tagline:"Searching for the hidden talents of our campus.<br>One stage for students, faculty and staff — Korean and international.",
+    tagline:"Searching for the hidden talents of KAIST.<br>One stage for students, faculty and staff — Korean and international.",
     cta_schedule:"See Schedule",cta_poster:"View Poster",cta_contact:"Contact Us",
     h_schedule:"Schedule &amp; Selection",h_info:"Attendance",h_contact:"Contact",
     who_t:"Who Can Attend",who_1:"All KAIST members — students, faculty and staff, Korean and international",
@@ -427,7 +427,7 @@ const FINAL_NOTES = [
 const PROGRAM = [
   { start:"16:00", end:"17:00", type:"",      ko:{t:"리셉션 및 문화체험", d:""},                            en:{t:"Reception & Cultural Booths", d:""} },
   { start:"17:00", end:"17:05", type:"perf",  ko:{t:"Welcome 공연", d:"KAIST 응원단 ELKA"},                 en:{t:"Welcome Performance", d:"KAIST Cheering Squad ELKA"} },
-  { start:"17:05", end:"17:07", type:"",      ko:{t:"개회", d:"사회자 (Haruna & Mia)"},                    en:{t:"Opening", d:"MCs (Haruna & Mia)"} },
+  { start:"17:05", end:"17:07", type:"",      ko:{t:"개회", d:"사회자 Haruna & Mia"},                    en:{t:"Opening", d:"MCs Haruna & Mia"} },
   { start:"17:07", end:"17:09", type:"",      ko:{t:"개회사", d:"국제협력처장 김소영"},                             en:{t:"Opening Remarks", d:"Vice President of International Office, So Young Kim"} },
   { start:"17:09", end:"17:12", type:"",      ko:{t:"축사", d:"총장 배충식"},                                 en:{t:"Congratulatory Remarks", d:"President, Choong Sik Bae"} },
   { start:"17:12", end:"17:15", type:"",      ko:{t:"기념사진 촬영", d:""},                                  en:{t:"Group Photo", d:""} },
@@ -458,7 +458,7 @@ const FINALISTS = [
    예) { name:"홍길동", photo:"mc1.jpg", role:{ko:"메인 MC", en:"Main MC"}, intro:{ko:"전산학부 박사과정", en:"PhD, School of Computing"} },
 */
 const MCS = [
-  { name:"Haruna Hamza Mohammed", photo:"", role:{ko:"MC", en:"MC"}, intro:{ko:"박사과정", en:"PhD Student"} },
+  { name:"Haruna", photo:"", role:{ko:"MC", en:"MC"}, intro:{ko:"박사과정", en:"PhD Student"} },
   { name:"Mia",                   photo:"", role:{ko:"MC", en:"MC"}, intro:{ko:"학사과정", en:"Undergraduate Student"} }
 ];
 
@@ -609,6 +609,7 @@ const PRIZE_ART = {
 };
 const ART_DEFS = '<defs><linearGradient id="gIce" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#d6eaf7"/><stop offset="1" stop-color="#9fcde8"/></linearGradient></defs>';
 const winners = n => lang==="ko" ? `${n}명` : `${n} ${n>1?"winners":"winner"}`;
+const medal = n => (lang==="ko" ? ["금","은","동"] : ["GOLD","SILVER","BRONZE"])[n-1] || ord(n);
 const ord = n => lang==="ko" ? `${n}등` : `${n}${["ST","ND","RD"][n-1]||"TH"} PRIZE`;
 
 function renderMC(){
@@ -623,14 +624,14 @@ function renderMC(){
 
 function renderRaffle(){
   document.getElementById("raffleNote").innerHTML = esc(RAFFLE_NOTE[lang]);
-  const card = p => {
+  const card = (p, useMedal) => {
     const L = p[lang] || p.ko, tba = !L.name;
     return `<div class="pz ${tba?'tba':''} ${p.rank===1?'first':''}">
       <div class="img ${p.img?'photo':''}" ${bgUrl(imgSrc(p.img))}>${p.img?"":(PRIZE_ART[p.art]?`<svg viewBox="0 0 160 120" role="img" aria-label="${esc(L.name)}">${ART_DEFS}${PRIZE_ART[p.art]}</svg>`:"🎁")}</div>
-      <div class="body"><div class="rk">${ord(p.rank)}${p.count?`<span class="cnt">${winners(p.count)}</span>`:""}</div><h4>${tba?t("prize_tba"):esc(L.name)}</h4>${L.desc?`<p>${esc(L.desc)}</p>`:""}</div></div>`;
+      <div class="body"><div class="rk">${useMedal ? medal(p.rank) : ord(p.rank)}${p.count?`<span class="cnt">${winners(p.count)}</span>`:""}</div><h4>${tba?t("prize_tba"):esc(L.name)}</h4>${L.desc?`<p>${esc(L.desc)}</p>`:""}</div></div>`;
   };
-  document.getElementById("raffleGeneral").innerHTML = RAFFLE.general.map(card).join("");
-  document.getElementById("raffleDresser").innerHTML = RAFFLE.dresser.map(card).join("");
+  document.getElementById("raffleGeneral").innerHTML = RAFFLE.general.map(p => card(p, false)).join("");
+  document.getElementById("raffleDresser").innerHTML = RAFFLE.dresser.map(p => card(p, true)).join("");
 }
 
 function applyLang(){
