@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2026 KAIST's Got Talent</title>
-<meta name="description" content="KAIST의 숨은 재능을 찾습니다. 2026 KAIST's Got Talent — Winter Masquerade 본선 2026년 11월 27일(금) 17:00, KAIST 대강당(E15). 주최: KAIST 국제교원 및 학생지원팀">
+<meta name="description" content="KAIST의 숨은 재능을 찾습니다. 2026 KAIST's Got Talent — Winter Masquerade 본선 2026년 11월 27일(금) 17:00, KAIST 대강당(E15).">
 <meta property="og:type" content="website">
 <meta property="og:title" content="2026 KAIST's Got Talent">
 <meta property="og:description" content="Winter Masquerade · 2026.11.27(금) 17:00 · KAIST 대강당(E15) · 무료 뷔페">
@@ -246,8 +246,7 @@
       <a href="#program" data-i18n="nav_program">프로그램</a>
       <a href="#mc" data-i18n="nav_mc">MC</a>
       <a href="#lineup" data-i18n="nav_lineup">라인업</a>
-      <a href="#info" data-i18n="nav_info">참가 안내</a>
-      <a href="#prize" data-i18n="nav_prize">상금</a>
+      <a href="#info" data-i18n="nav_info">참석 안내</a>
       <a href="#raffle" data-i18n="nav_raffle">경품</a>
       <a href="#contact" data-i18n="nav_contact">문의</a>
     </div>
@@ -263,11 +262,9 @@
   <div class="hero-shade"></div>
   <div class="snow"></div>
   <div class="wrap">
-    <div class="status"><i></i><span id="statusText"></span></div>
-    <div class="year">2026 · ISSS · KAIST</div>
     <h1>KAIST's<br>Got Talent</h1>
     <div class="theme">Winter Masquerade</div>
-    <p class="tag" data-i18n="tagline">KAIST가 캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.</p>
+    <p class="tag" data-i18n="tagline">캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.</p>
 
     <div class="count" id="count">
       <div class="cell"><b id="d">--</b><span>DAYS</span></div>
@@ -322,10 +319,10 @@
 
 <section id="info">
   <div class="wrap">
-    <div class="eyebrow">WHO CAN JOIN</div>
-    <h2 data-i18n="h_info">참가 안내</h2>
+    <div class="eyebrow">ATTENDANCE</div>
+    <h2 data-i18n="h_info">참석 안내</h2>
     <div class="box">
-      <h3 data-i18n="who_t">참가 대상</h3>
+      <h3 data-i18n="who_t">참석 대상</h3>
       <ul>
         <li data-i18n="who_1">모든 KAIST 내·외국인 구성원 (학생, 교원, 직원)</li>
       </ul>
@@ -333,32 +330,18 @@
   </div>
 </section>
 
-<section id="prize">
-  <div class="wrap">
-    <div class="eyebrow">PRIZES</div>
-    <h2 data-i18n="h_prize">본선 진출자 상금</h2>
-    <div class="prizes">
-      <div class="prize g"><div class="rank">🥇 1ST</div><div class="amt">1,000,000</div><div class="unit" data-i18n="krw">원</div></div>
-      <div class="prize s"><div class="rank">🥈 2ND</div><div class="amt">700,000</div><div class="unit" data-i18n="krw">원</div></div>
-      <div class="prize b"><div class="rank">🥉 3RD</div><div class="amt">500,000</div><div class="unit" data-i18n="krw">원</div></div>
-      <div class="prize r"><div class="rank">✨ 4TH~</div><div class="amt">200,000</div><div class="unit" data-i18n="krw_each">원 (각)</div></div>
-    </div>
-    <p class="fine" data-i18n="pretax">※ 모든 상금은 세전 금액입니다.</p>
-  </div>
-</section>
-
 <section id="raffle">
   <div class="wrap">
-    <div class="eyebrow">RAFFLE &amp; BEST DRESSED</div>
-    <h2 data-i18n="h_raffle">경품 추첨</h2>
-    <div class="hl" id="raffleNote" style="margin:-14px 0 32px"></div>
+    <div class="eyebrow">BEST DRESSED &amp; RAFFLE</div>
+    <h2 data-i18n="h_raffle">베스트 드레서 &amp; 현장 추첨</h2>
     <div class="rgroup">
-      <div class="rhead"><h3 data-i18n="r_gen">🎟️ 일반 래플</h3><span data-i18n="r_gen_d">현장 참석자 대상 추첨</span></div>
-      <div class="pzs" id="raffleGeneral"></div>
+      <div class="rhead"><h3 data-i18n="r_dr">🎭 베스트 드레서</h3><span data-i18n="r_dr_d">제일 멋진 가면과 의상을 착용한 분께</span></div>
+      <div class="pzs" id="raffleDresser"></div>
     </div>
     <div class="rgroup">
-      <div class="rhead"><h3 data-i18n="r_dr">🎭 베스트 드레서</h3><span data-i18n="r_dr_d">드레스코드(가면·의상)를 가장 멋지게 소화한 분께</span></div>
-      <div class="pzs" id="raffleDresser"></div>
+      <div class="rhead"><h3 data-i18n="r_gen">🎟️ 현장 추첨</h3><span data-i18n="r_gen_d">현장 참석자 대상 추첨</span></div>
+      <div class="hl" id="raffleNote" style="margin:0 0 20px"></div>
+      <div class="pzs" id="raffleGeneral"></div>
     </div>
   </div>
 </section>
@@ -369,12 +352,11 @@
       <div class="eyebrow">CONTACT</div>
       <h2 data-i18n="h_contact" style="margin-bottom:14px">문의</h2>
       <a class="mail" href="mailto:issst@kaist.ac.kr">issst@kaist.ac.kr</a>
-      <p style="color:var(--muted);margin-top:10px" data-i18n="org">KAIST 국제교원 및 학생지원팀</p>
     </div>
   </div>
 </section>
 
-<footer>© 2026 KAIST International Scholar &amp; Student Services</footer>
+<footer>© 2026 KAIST</footer>
 
 <div class="lb" id="lb" role="dialog" aria-label="Poster"><div class="pimg" role="img" aria-label="2026 KAIST's Got Talent poster"></div></div>
 
@@ -385,36 +367,36 @@ window.PRIZE_PHOTOS = {"ipad": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABA
 /* ===== 여기만 수정하면 됩니다 ===== */
 const EVENTS = [
   { id:"deadline", ico:"📹", start:"2026-10-28T23:59:00+09:00",
-    ko:{t:"1차 예선 (영상 심사)", w:"10.01 – 10.28 (수)", n:"접수 마감 23:59"},
-    en:{t:"Round 1 · Video", w:"Oct 1 – Oct 28 (Wed)", n:"Closed at 23:59"} },
+    ko:{t:"1차 예선 (영상 심사)", w:"10.01 – 10.28 (수)", n:""},
+    en:{t:"Round 1 · Video", w:"Oct 1 – Oct 28 (Wed)", n:""} },
   { id:"result", ico:"📢", start:"2026-11-02T09:00:00+09:00",
-    ko:{t:"1차 결과 발표", w:"11.02 (월)", n:"개별 안내"},
-    en:{t:"Round 1 Results", w:"Nov 2 (Mon)", n:"Notified individually"} },
+    ko:{t:"1차 결과 발표", w:"11.02 (월)", n:""},
+    en:{t:"Round 1 Results", w:"Nov 2 (Mon)", n:""} },
   { id:"round2", ico:"🎭", start:"2026-11-06T16:00:00+09:00", end:"2026-11-06T18:00:00+09:00",
-    ko:{t:"2차 예선 (현장 심사)", w:"11.06 (금) 16:00–18:00", n:"장소 개별 안내"},
-    en:{t:"Round 2 · Live Audition", w:"Nov 6 (Fri) 16:00–18:00", n:"Venue: notified individually"} },
+    ko:{t:"2차 예선 (현장 심사)", w:"11.06 (금)", n:""},
+    en:{t:"Round 2 · Live Audition", w:"Nov 6 (Fri)", n:""} },
   { id:"final", ico:"🏆", start:"2026-11-27T17:00:00+09:00", end:"2026-11-27T20:30:00+09:00",
     ko:{t:"최종 본선", w:"11.27 (금) 17:00", n:"KAIST 대강당 (E15) · 문화부스 16:00"},
     en:{t:"Grand Final", w:"Nov 27 (Fri) 5:00 PM", n:"KAIST Auditorium (E15) · Booths 4:00 PM"} }
 ];
 const I18N = {
   ko:{
-    nav_schedule:"일정",nav_mc:"MC",nav_raffle:"경품",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_raffle:"경품 추첨",r_gen:"🎟️ 일반 래플",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"드레스코드(가면·의상)를 가장 멋지게 소화한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참가 안내",nav_prize:"상금",nav_contact:"문의",
-    tagline:"KAIST가 캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.",
+    nav_schedule:"일정",nav_mc:"MC",nav_raffle:"경품",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_raffle:"베스트 드레서 &amp; 현장 추첨",r_gen:"🎟️ 현장 추첨",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"제일 멋진 가면과 의상을 착용한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참석 안내",nav_contact:"문의",
+    tagline:"캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.",
     cta_schedule:"일정 보기",cta_poster:"포스터 보기",cta_contact:"문의하기",
-    h_schedule:"일정 &amp; 선발",h_info:"참가 안내",h_prize:"본선 진출자 상금",h_contact:"문의",
-    who_t:"참가 대상",who_1:"모든 KAIST 내·외국인 구성원 (학생, 교원, 직원)",
-    krw:"원",krw_each:"원 (각)",pretax:"※ 모든 상금은 세전 금액입니다.",org:"KAIST 국제교원 및 학생지원팀",
+    h_schedule:"일정 &amp; 선발",h_info:"참석 안내",h_contact:"문의",
+    who_t:"참석 대상",who_1:"모든 KAIST 내·외국인 구성원 (학생, 교원, 직원)",
+    
     done:"완료",live:"진행 중",tbd:"(시간 추후 공지 · 당일 기준)",over:"행사가 모두 종료되었습니다. 감사합니다!",
     st_open:"접수 중",st_closed:"접수 마감 · 예선 진행 중",st_final:"본선 진출자 확정 · 본선 D-",st_live:"지금 진행 중",st_end:"행사 종료"
   },
   en:{
-    nav_schedule:"Schedule",nav_mc:"MC",nav_raffle:"Raffle",h_mc:"Our MCs",mc_wait:"Selection in progress",h_raffle:"Raffle & Prizes",r_gen:"🎟️ General Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dressed",r_dr_d:"For those who wear the masquerade dress code best",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"How to Join",nav_prize:"Prizes",nav_contact:"Contact",
-    tagline:"KAIST is searching for the hidden talents of our campus.<br>One stage for students, faculty and staff — Korean and international.",
+    nav_schedule:"Schedule",nav_mc:"MC",nav_raffle:"Prizes",h_mc:"Our MCs",mc_wait:"Selection in progress",h_raffle:"Prizes &amp; Raffle",r_gen:"🎟️ On-site Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dressed",r_dr_d:"For those wearing the best mask and outfit",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"Attendance",nav_contact:"Contact",
+    tagline:"Searching for the hidden talents of our campus.<br>One stage for students, faculty and staff — Korean and international.",
     cta_schedule:"See Schedule",cta_poster:"View Poster",cta_contact:"Contact Us",
-    h_schedule:"Schedule &amp; Selection",h_info:"How to Join",h_prize:"Prizes for Finalists",h_contact:"Contact",
-    who_t:"Eligibility",who_1:"All KAIST members — students, faculty and staff, Korean and international",
-    krw:"KRW",krw_each:"KRW each",pretax:"※ All prize amounts are before tax.",org:"KAIST International Scholar & Student Services",
+    h_schedule:"Schedule &amp; Selection",h_info:"Attendance",h_contact:"Contact",
+    who_t:"Who Can Attend",who_1:"All KAIST members — students, faculty and staff, Korean and international",
+    
     done:"Done",live:"Live",tbd:"(time TBA · counting to the day)",over:"The event has ended. Thank you!",
     st_open:"Applications open",st_closed:"Applications closed · Auditions underway",st_final:"Finalists set · Final in D-",st_live:"Happening now",st_end:"Event ended"
   }
@@ -428,9 +410,9 @@ const FINAL_INFO = {
   venue: { ko:"KAIST 대강당 (E15)", en:"KAIST Auditorium (E15)" }
 };
 const FINAL_NOTES = [
-  { ko:{k:"베스트 드레서에 도전하세요!", v:"모든 문화권의 가면·의상 환영"}, en:{k:"Chance to Win Best Dressed!", v:"Masks & costumes from all cultures are welcome"} },
+  { ko:{k:"베스트 드레서에 도전하세요!", v:"모든 문화권의 가면·의상 환영"}, en:{k:"Best Dressed!", v:"Masks & costumes from all cultures are welcome"} },
   { ko:{k:"무료 뷔페",  v:"KAIST 구성원과 가족 누구나"},              en:{k:"Free buffet", v:"For the KAIST community and their families"} },
-  { ko:{k:"경품 추첨",  v:"현장 래플 이벤트"},                        en:{k:"Raffle", v:"Get a chance to win"} }
+  { ko:{k:"경품 추첨",  v:"현장 추첨 이벤트"},                        en:{k:"Raffle", v:"Get a chance to win a prize"} }
 ];
 
 /* ----- 본선 세부 일정 -----
@@ -441,15 +423,15 @@ const FINAL_NOTES = [
 const PROGRAM = [
   { start:"16:00", end:"17:00", type:"",      ko:{t:"리셉션 및 문화체험", d:""},                            en:{t:"Reception & Cultural Booths", d:""} },
   { start:"17:00", end:"17:05", type:"perf",  ko:{t:"Welcome 공연", d:"KAIST 응원단 ELKA"},                 en:{t:"Welcome Performance", d:"KAIST Cheering Squad ELKA"} },
-  { start:"17:05", end:"17:07", type:"",      ko:{t:"개회", d:"사회자 (내·외국인 학생)"},                    en:{t:"Opening", d:"MCs"} },
-  { start:"17:07", end:"17:09", type:"",      ko:{t:"개회사", d:"국제협력처장"},                             en:{t:"Opening Remarks", d:"Vice President of International Office, So Young Kim"} },
-  { start:"17:09", end:"17:12", type:"",      ko:{t:"축사", d:"KAIST 총장 배충식"},                                 en:{t:"Congratulatory Remarks", d:"KAIST President, Choongsik Bae"} },
+  { start:"17:05", end:"17:07", type:"",      ko:{t:"개회", d:"사회자 (Haruna & Mia)"},                    en:{t:"Opening", d:"MCs (Haruna & Mia)"} },
+  { start:"17:07", end:"17:09", type:"",      ko:{t:"개회사", d:"국제협력처장 김소영"},                             en:{t:"Opening Remarks", d:"Vice President of International Office, So Young Kim"} },
+  { start:"17:09", end:"17:12", type:"",      ko:{t:"축사", d:"총장 배충식"},                                 en:{t:"Congratulatory Remarks", d:"President, Choong Sik Bae"} },
   { start:"17:12", end:"17:15", type:"",      ko:{t:"기념사진 촬영", d:""},                                  en:{t:"Group Photo", d:""} },
   { start:"17:15", end:"18:05", type:"perf",  ko:{t:"장기자랑 경연 (Talent Show)", d:"본선 진출 5팀"},      en:{t:"Talent Show", d:"5 finalist acts"} },
   { start:"18:05", end:"18:15", type:"perf",  ko:{t:"특별공연", d:"2023 & 2025 우승팀"},                     en:{t:"Special Performance", d:"2023 & 2025 winners"} },
-  { start:"18:15", end:"18:25", type:"award", ko:{t:"장기자랑 순위 발표 및 시상", d:"기념촬영 포함"},        en:{t:"Talent Show Results & Awards", d:"Including photo session"} },
+  { start:"18:15", end:"18:25", type:"award", ko:{t:"장기자랑 순위 발표 및 시상", d:""},        en:{t:"Talent Show Results & Awards", d:""} },
   { start:"18:25", end:"18:38", type:"award", ko:{t:"Best Dressed 시상 및 경품 추첨", d:""},                 en:{t:"Best Dressed Awards & Raffle Draw", d:""} },
-  { start:"18:38", end:"18:40", type:"",      ko:{t:"폐회", d:"사회자"},                                     en:{t:"Closing", d:"MCs"} },
+  { start:"18:38", end:"18:40", type:"",      ko:{t:"폐회", d:""},                                     en:{t:"Closing", d:""} },
   { start:"18:40", end:"20:30", type:"party", ko:{t:"글로벌 교류 만찬 (Harmony Night)", d:"Standing Party"}, en:{t:"Global Networking Dinner (Harmony Night)", d:"Standing party"} },
   { start:"20:30",              type:"",      ko:{t:"행사 종료", d:""},                                      en:{t:"End of Event", d:""} }
 ];
@@ -472,18 +454,18 @@ const FINALISTS = [
    예) { name:"홍길동", photo:"mc1.jpg", role:{ko:"메인 MC", en:"Main MC"}, intro:{ko:"전산학부 박사과정", en:"PhD, School of Computing"} },
 */
 const MCS = [
-  { name:"HARUNA HAMZA MOHAMMED", photo:"", role:{ko:"MC", en:"MC"}, intro:{ko:"박사과정", en:"PhD Student"} },
+  { name:"Haruna Hamza Mohammed", photo:"", role:{ko:"MC", en:"MC"}, intro:{ko:"박사과정", en:"PhD Student"} },
   { name:"Mia",                   photo:"", role:{ko:"MC", en:"MC"}, intro:{ko:"학사과정", en:"Undergraduate Student"} }
 ];
 
-/* ----- 경품 래플 -----
+/* ----- 경품 (베스트 드레서 · 현장 추첨) -----
    count: 당첨 인원 · name을 비워두면 '경품 공개 예정'으로 표시됩니다.
    art: 기본 일러스트 (tablet · phone · giftcard · watch · bag · tumbler)
    img: 페이지에 내장된 사진 이름(ipad · buds · oliveyoung · watch · backpack · tumbler)
         또는 같은 폴더에 올린 사진 파일명(예: "prize1.jpg"). 비워두면 일러스트가 보입니다.
    img: 경품 사진 파일명(같은 폴더에 업로드, 예: "raffle1.jpg") 또는 이미지 주소
 */
-const RAFFLE_NOTE = { ko:"🎁 안내데스크에서 래플 응모권을 꼭 받아 가세요.", en:"🎁 Reminder to pick up your raffle ticket at the front desk." };
+const RAFFLE_NOTE = { ko:"🎁 안내데스크에서 추첨 응모권을 꼭 받아 가세요. (반드시 KAIST ID Card를 가지고 오세요)", en:"🎁 Pick up your raffle ticket at the front desk. (Please bring your KAIST ID card.)" };
 const RAFFLE = {
   general: [
     { rank:1, count:1, img:"ipad", art:"tablet", ko:{name:"애플 아이패드", desc:""},             en:{name:"Apple iPad", desc:""} },
@@ -526,7 +508,7 @@ function renderTimeline(){
       badge = `<span class="badge ${i===nextIdx?'next':'up'}">${dday(ms(ev.start))}</span>`;
       if(i===nextIdx) cls="is-next";
     }
-    return `<div class="step ${cls}">${badge}<div class="ico">${ev.ico}</div><h3>${L.t}</h3><div class="when">${L.w}</div><div class="note">${L.n}</div></div>`;
+    return `<div class="step ${cls}">${badge}<div class="ico">${ev.ico}</div><h3>${L.t}</h3><div class="when">${L.w}</div>${L.n?`<div class="note">${L.n}</div>`:""}</div>`;
   }).join("");
 }
 
@@ -539,7 +521,7 @@ function renderStatus(){
   else if(now > ms(fin.end)) txt = t("st_end");
   else if(now > ms(EVENTS[2].end)) txt = t("st_final") + dday(ms(fin.start)).replace("D-","");
   else txt = t("st_closed");
-  document.getElementById("statusText").textContent = txt;
+  const el = document.getElementById("statusText"); if(el) el.textContent = txt;
 }
 
 const d_=document.getElementById("d"),h_=document.getElementById("h"),m_=document.getElementById("m"),s_=document.getElementById("s");
