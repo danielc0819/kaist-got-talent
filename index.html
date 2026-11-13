@@ -247,7 +247,8 @@
       <a href="#mc" data-i18n="nav_mc">MC</a>
       <a href="#lineup" data-i18n="nav_lineup">라인업</a>
       <a href="#info" data-i18n="nav_info">참석 안내</a>
-      <a href="#raffle" data-i18n="nav_raffle">경품</a>
+      <a href="#bestdressed" data-i18n="nav_dr">베스트 드레서</a>
+      <a href="#raffle" data-i18n="nav_raffle">현장 추첨</a>
       <a href="#contact" data-i18n="nav_contact">문의</a>
     </div>
     <div class="lang">
@@ -330,19 +331,22 @@
   </div>
 </section>
 
+<section id="bestdressed">
+  <div class="wrap">
+    <div class="eyebrow">BEST DRESSED</div>
+    <h2 data-i18n="h_dr">베스트 드레서</h2>
+    <p class="lead" data-i18n="r_dr_d">제일 멋진 가면과 의상을 착용한 분께</p>
+    <div class="pzs" id="raffleDresser"></div>
+  </div>
+</section>
+
 <section id="raffle">
   <div class="wrap">
-    <div class="eyebrow">BEST DRESSED &amp; RAFFLE</div>
-    <h2 data-i18n="h_raffle">베스트 드레서 &amp; 현장 추첨</h2>
-    <div class="rgroup">
-      <div class="rhead"><h3 data-i18n="r_dr">🎭 베스트 드레서</h3><span data-i18n="r_dr_d">제일 멋진 가면과 의상을 착용한 분께</span></div>
-      <div class="pzs" id="raffleDresser"></div>
-    </div>
-    <div class="rgroup">
-      <div class="rhead"><h3 data-i18n="r_gen">🎟️ 현장 추첨</h3><span data-i18n="r_gen_d">현장 참석자 대상 추첨</span></div>
-      <div class="hl" id="raffleNote" style="margin:0 0 20px"></div>
-      <div class="pzs" id="raffleGeneral"></div>
-    </div>
+    <div class="eyebrow">RAFFLE</div>
+    <h2 data-i18n="h_raffle">현장 추첨</h2>
+    <p class="lead" data-i18n="r_gen_d">현장 참석자 대상 추첨</p>
+    <div class="hl" id="raffleNote" style="margin:0 0 20px"></div>
+    <div class="pzs" id="raffleGeneral"></div>
   </div>
 </section>
 
@@ -381,7 +385,7 @@ const EVENTS = [
 ];
 const I18N = {
   ko:{
-    nav_schedule:"일정",nav_mc:"MC",nav_raffle:"경품",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_raffle:"베스트 드레서 &amp; 현장 추첨",r_gen:"🎟️ 현장 추첨",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"제일 멋진 가면과 의상을 착용한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참석 안내",nav_contact:"문의",
+    nav_schedule:"일정",nav_mc:"MC",nav_dr:"베스트 드레서",nav_raffle:"현장 추첨",h_mc:"당일 MC",mc_wait:"선발 중 · 곧 공개됩니다",h_dr:"베스트 드레서",h_raffle:"현장 추첨",r_gen:"🎟️ 현장 추첨",r_gen_d:"현장 참석자 대상 추첨",r_dr:"🎭 베스트 드레서",r_dr_d:"제일 멋진 가면과 의상을 착용한 분께",prize_tba:"경품 공개 예정",nav_program:"프로그램",nav_lineup:"라인업",h_program:"본선 세부 일정",h_lineup:"본선 진출자",all:"전체",group:"그룹",solo:"개인",mixed:"🌍 한·외 혼합",empty_prog_t:"세부 일정 공개 예정",empty_prog_d:"세부 진행 순서가 확정되면 이곳에 공개됩니다.",empty_line_t:"본선 진출자 공개 예정",empty_line_d:"2차 예선(11.06) 이후 이곳에 공개됩니다.",nav_info:"참석 안내",nav_contact:"문의",
     tagline:"캠퍼스의 숨은 재능을 찾습니다.<br>학생·교원·직원, 내·외국인 모두의 무대.",
     cta_schedule:"일정 보기",cta_poster:"포스터 보기",cta_contact:"문의하기",
     h_schedule:"일정 &amp; 선발",h_info:"참석 안내",h_contact:"문의",
@@ -391,7 +395,7 @@ const I18N = {
     st_open:"접수 중",st_closed:"접수 마감 · 예선 진행 중",st_final:"본선 진출자 확정 · 본선 D-",st_live:"지금 진행 중",st_end:"행사 종료"
   },
   en:{
-    nav_schedule:"Schedule",nav_mc:"MC",nav_raffle:"Prizes",h_mc:"Our MCs",mc_wait:"Selection in progress",h_raffle:"Prizes &amp; Raffle",r_gen:"🎟️ On-site Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dressed",r_dr_d:"For those wearing the best mask and outfit",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"Attendance",nav_contact:"Contact",
+    nav_schedule:"Schedule",nav_mc:"MC",nav_dr:"Best Dressed",nav_raffle:"Raffle",h_mc:"Our MCs",mc_wait:"Selection in progress",h_dr:"Best Dressed",h_raffle:"On-site Raffle",r_gen:"🎟️ On-site Raffle",r_gen_d:"Drawn among attendees on site",r_dr:"🎭 Best Dressed",r_dr_d:"For those wearing the best mask and outfit",prize_tba:"Prize to be announced",nav_program:"Program",nav_lineup:"Lineup",h_program:"Final Program",h_lineup:"Finalists",all:"All",group:"Group",solo:"Solo",mixed:"🌍 Mixed group",empty_prog_t:"Program coming soon",empty_prog_d:"The detailed run of show will be posted here soon.",empty_line_t:"Finalists coming soon",empty_line_d:"Finalists will be announced here after Round 2 (Nov 6).",nav_info:"Attendance",nav_contact:"Contact",
     tagline:"Searching for the hidden talents of our campus.<br>One stage for students, faculty and staff — Korean and international.",
     cta_schedule:"See Schedule",cta_poster:"View Poster",cta_contact:"Contact Us",
     h_schedule:"Schedule &amp; Selection",h_info:"Attendance",h_contact:"Contact",
